@@ -2,7 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import dbConnection from './config/dbConnection.js'
 import morgan from 'morgan';
-import userRouter from './routes/auth.routes.js';
+import userRoutes from './routes/auth.routes.js';
+import initialRoutes from './routes/initial.routes.js'
 const app = express();
 dotenv.config();
 dbConnection();
@@ -13,10 +14,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'))
 
 // Api 
-app.use('/api/v1/auth', userRouter)
+app.use('/api/v1/auth', userRoutes)
 
-app.get('/api/v1', (req, res) => {
-    res.send(`<h1>App is working </h1>`)
-})
+app.use('/api/v1', initialRoutes)
 
 export default app;
