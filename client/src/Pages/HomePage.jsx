@@ -2,9 +2,9 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <h1 style={{ height: "84vh" }}>
+    <div style={{ height: "80vh" }}>
       <h1>HomePage</h1>
-    </h1>
+    </div>
   );
 };
 

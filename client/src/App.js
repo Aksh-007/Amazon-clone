@@ -8,6 +8,9 @@ import Policy from './Pages/Policy';
 import Category from './Pages/Category.jsx'
 import Header from './Pages/Header.jsx'
 import Footer from './Pages/Footer.jsx'
+import Register from './Pages/Register';
+import Login from './Pages/Login';
+import Cart from './Pages/Cart';
 
 function App() {
   return (
@@ -15,7 +18,9 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />
-        {/* <Route path='/register' element=/> */}
+        <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/cart' element={<Cart />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/policy' element={<Policy />} />
