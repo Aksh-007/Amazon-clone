@@ -1,9 +1,10 @@
+import Layout from "../Components/Layout/Layout";
+
 const Policy = () => {
   return (
-    <h1>
+    <Layout>
       <h1>Privacy Policy Page</h1>
-    </h1>
+    </Layout>
   );
 };
-
 export default Policy;

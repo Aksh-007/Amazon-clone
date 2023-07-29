@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import Layout from "../Components/Layout/Layout";
 
 const NotFound = () => {
   return (
-    <div className="error-page-wrap" style={{ height: "77.9vh" }}>
+    <Layout className="error-page-wrap">
       <div className="container">
         <div className="errormain">
           <div
@@ -28,7 +29,7 @@ const NotFound = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

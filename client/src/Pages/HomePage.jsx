@@ -1,10 +1,11 @@
 import React from "react";
+import Layout from "../Components/Layout/Layout";
 
 const HomePage = () => {
   return (
-    <div style={{ height: "80vh" }}>
+    <Layout>
       <h1>HomePage</h1>
-    </div>
+    </Layout>
   );
 };
 

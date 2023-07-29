@@ -1,10 +1,11 @@
 import React from "react";
+import Layout from "../Components/Layout/Layout";
 
 const Category = () => {
   return (
-    <div>
+    <Layout>
       <h1>Category</h1>
-    </div>
+    </Layout>
   );
 };
 
