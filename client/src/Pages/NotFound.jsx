@@ -1,33 +1,16 @@
 import { Link } from "react-router-dom";
 import Layout from "../Components/Layout/Layout";
+import "../Components/Styles/NotFound.css";
 
 const NotFound = () => {
   return (
     <Layout className="error-page-wrap">
-      <div className="container">
-        <div className="errormain">
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              height: "18vh",
-            }}
-          >
-            <h3 style={{ border: "none", fontSize: "10rem" }}>404</h3>
-            <h3 style={{ border: "none", marginTop: "10px" }}>
-              Page was not Found
-            </h3>
-          </div>
-          <div className="error-msg">
-            <p style={{}}>
-              The page you are looking is not available or has been removed. Try
-              going to Home Page by using the button below.
-            </p>
-            <Link to="/" className="btn">
-              Go to Home{" "}
-            </Link>
-          </div>
-        </div>
+      <div className="pnf">
+        <h1 className="pnf-title">404</h1>
+        <h2 className="pnf-heading">Oops ! Page Not Found</h2>
+        <Link to="/" className="pnf-btn">
+          Go Back
+        </Link>
       </div>
     </Layout>
   );

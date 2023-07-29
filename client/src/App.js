@@ -3,11 +3,9 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import NotFound from './Pages/NotFound';
+import NotFound from './Pages/NotFound.jsx';
 import Policy from './Pages/Policy';
 import Category from './Pages/Category.jsx'
-import Header from './Components/Layout/Header.jsx'
-import Footer from './Components/Layout/Footer.jsx'
 import Register from './Pages/Register';
 import Login from './Pages/Login';
 import Cart from './Pages/Cart';
@@ -15,8 +13,7 @@ import Cart from './Pages/Cart';
 function App() {
   return (
     <BrowserRouter>
-      {/* <Header /> */}
-      <Routes>
+      <Routes >
         <Route path='/' element={<HomePage />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
@@ -27,7 +24,6 @@ function App() {
         <Route path='/category' element={<Category />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
-      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
