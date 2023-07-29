@@ -66,7 +66,7 @@ export const registerController = async (req, res) => {
     } catch (error) {
         console.log(error);
         res.status(500).json({
-            sucess: false,
+            success: false,
             message: `Error while Registering user ${error.message}`,
         })
     }

@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv"
 dotenv.config();
 
-// databse connection file 
+// databse connection file  
 const dbConnection = async () => {
     try {
         const conn = await mongoose.connect(process.env.MONGO_URI)
