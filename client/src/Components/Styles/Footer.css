@@ -1,0 +1,25 @@
+/* Footer */
+
+.footer {
+  color: #fff;
+  padding: 12px;
+  background: linear-gradient(to right, #434343, #000000);
+  align-items: center;
+}
+
+.paragraph {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+
+.Link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Link:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
