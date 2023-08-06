@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
         exit="exit" // Exit state (used later) to variants.exit
         transition={{ type: "linear" }} // Set the transition to linear
         style={{
-          minHeight: "80vh",
+          minHeight: "78vh",
           marginTop: "10vh",
           display: "flex",
           justifyContent: "center",

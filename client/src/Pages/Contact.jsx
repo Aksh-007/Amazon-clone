@@ -4,17 +4,7 @@ import { BiMailSend, BiPhoneCall, BiSupport } from "react-icons/bi";
 const Contact = () => {
   return (
     <Layout>
-      <div
-        className="row "
-        style={{
-          margin: "0",
-          padding: "0",
-          height: "70vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <div className="row contactus">
         <div className="col-md-6 ">
           <img
             src="/images/contactus.jpeg"
@@ -35,13 +25,13 @@ const Contact = () => {
             shopping experience."
           </p>
           <p className="mt-3">
-            <BiMailSend /> : www.help@ecommerceapp.com
+            <BiMailSend size={"30px"} /> : www.help@ecommerceapp.com
           </p>
           <p className="mt-3">
-            <BiPhoneCall /> : 012-3456789
+            <BiPhoneCall size={"30px"} /> : 012-3456789
           </p>
           <p className="mt-3">
-            <BiSupport /> : 1800-0000-0000 (toll free)
+            <BiSupport size={"30px"} /> : 1800-0000-0000 (toll free)
           </p>
         </div>
       </div>
