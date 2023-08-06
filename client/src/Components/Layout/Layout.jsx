@@ -21,8 +21,8 @@ const Layout = ({ children }) => {
         style={{
           minHeight: "780vh",
           marginTop: "10vh",
-          // display: "flex",
-          // justifyContent: "center",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
         {children}
