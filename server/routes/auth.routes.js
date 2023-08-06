@@ -8,6 +8,7 @@ import { isAdmin, requireSignIn } from '../middlewares/auth.middleware.js';
 router.post('/register', registerController)
 router.post('/login', loginController);
 
+// only admin can access this route
 router.get('/test', requireSignIn, isAdmin, testController)
 
 export default router;

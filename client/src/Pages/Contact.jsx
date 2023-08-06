@@ -3,15 +3,18 @@ import Layout from "../Components/Layout/Layout";
 import { BiMailSend, BiPhoneCall, BiSupport } from "react-icons/bi";
 const Contact = () => {
   return (
-    <Layout
-    // style={{
-    //   height: "71.3vh",
-    //   overflowX: "hidden",
-    //   marginTop: "50px",
-    //   padding: "50px",
-    // }}
-    >
-      <div className="row contactus ">
+    <Layout>
+      <div
+        className="row "
+        style={{
+          margin: "0",
+          padding: "0",
+          height: "70vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <div className="col-md-6 ">
           <img
             src="/images/contactus.jpeg"
